@@ -45,15 +45,18 @@ p {
 }
 
 .dice-image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   align-items: center;
   display: block;
   margin: 20px auto;
-  transition: transform 0.2s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .dice-image:hover {
   transform: scale(1.1);
+}
+.dice-animate {
+  transform: scale(1.2) rotate(20deg);
 }
